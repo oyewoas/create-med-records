@@ -1,4 +1,4 @@
-import { userActionTypes } from "./record.types"
+import { recordActionTypes } from "./record.types"
 
 
 const INITIAL_STATE = {
@@ -7,14 +7,10 @@ const INITIAL_STATE = {
 
 const medicalRecordReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case userActionTypes.SET_CURRENT_USER:
+        case recordActionTypes.SET_CURRENT_RECORD:
             return {
                 ...state,
                 currentRecord: action.payload.data
-            }
-        case userActionTypes.LOG_OUT_CURRENT_USER:
-            return {...state, 
-                currentRecord: null 
             }
         default:
             return state

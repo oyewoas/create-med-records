@@ -2,7 +2,7 @@ import { createSelector } from "reselect";
 
 const selectRecord = state => state.record;
 
-export const selectCurrentUser = createSelector(
+export const selectCurrentRecord = createSelector(
     [selectRecord],
     (record) => record.currentRecord 
 )

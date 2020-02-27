@@ -1,4 +1,3 @@
-export const userActionTypes = {
-    SET_CURRENT_USER: 'SET_CURRENT_USER',
-    LOG_OUT_CURRENT_USER: 'LOG_OUT_CURRENT_USER'
+export const recordActionTypes = {
+    SET_CURRENT_RECORD: 'SET_CURRENT_RECORD',
 }

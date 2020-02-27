@@ -8,68 +8,35 @@ const Toast = Swal.mixin({
   })
 
 //Success Responses
-const loginSuccess = () => {
+const createRecordSucess = () => {
     Toast.fire({
         type: 'success',
         icon: 'success',
-        title: 'Logged in successfully'
+        title: 'Medical record created successfully'
       })
 }
 
-const logOutSuccess = () => {
-    Toast.fire({
-        type: 'success',
-        icon: 'success',
-        title: 'Logged out successfully'
-      })
-}
 
-const compareSuccess = () => {
-    Toast.fire({
-        type: 'success',
-        icon: 'success',
-        title: 'Comparison Successful'
-      })
-}
 
 
 //Error Responses
-const loginError = () => {
+const createRecordError = () => {
     Toast.fire({
         type: 'error',
         icon: 'error',
-        title: 'Login Error'
+        title: 'Medical record creation Error'
       })
 }
 
-const logoutError = () => {
-    Toast.fire({
-        type: 'error',
-        icon: 'error',
-        title: 'Logout Error'
-      })
-}
-
-const compareError = () => {
-    Toast.fire({
-        type: 'error',
-        icon: 'error',
-        title: 'Comparison Error'
-      })
-}
 
 
 const successResponses = {
-    login : loginSuccess,
-    logout: logOutSuccess,
-    compare: compareSuccess
+    create_record : createRecordSucess,
     
 }
 
 const errorResponses ={
-    login: loginError,
-    logout: logoutError,
-    compare: compareError
+    create_record: createRecordError,
 }
 
 const ALERT_RESPONSES = {

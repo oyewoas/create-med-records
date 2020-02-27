@@ -7,7 +7,7 @@ import useFormValidation from '../../component/use-formvalidation/use-formvalida
 import FORM_VALIDATION_RULES from '../../utils/form-validation-rules'
 import { connect } from 'react-redux'
 import { setMedicalRecord } from '../../redux/record/record.actions'
-import { userLogin } from '../../services/user.services'
+import { createMedicalRecord } from '../../services/record.services'
 import RadioButton from '../../component/radio-button/radio-button.component'
 
 
@@ -17,8 +17,8 @@ const CreateMedicalRecord = ({ setMedicalRecord }) => {
     const [data] = useState({male:"male", female:"female", no:"no", yes: "yes", unknown: "unknown"})
     const initialFormState = { first_name: "", last_name: "", age: "", gender: "", city: "", country: "", diabetes:""};
 
-    const loginFunction = () => {
-        userLogin(setMedicalRecord)
+    const createMedicalRecordFunction = () => {
+        createMedicalRecord(setMedicalRecord)
     }
     
     const {
@@ -28,7 +28,7 @@ const CreateMedicalRecord = ({ setMedicalRecord }) => {
         values,
         errors,
         isSubmitting
-    } = useFormValidation(initialFormState, create_record, loginFunction);
+    } = useFormValidation(initialFormState, create_record, createMedicalRecordFunction);
 
         return (
             <div className="create-record">
