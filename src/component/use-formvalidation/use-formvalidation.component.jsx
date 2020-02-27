@@ -26,7 +26,6 @@ const useFormValidation = (initialState, validate, runOnSubmit) => {
                 setTouched([]);
                 // run form submission when no errors
                 runOnSubmit();
-                console.log(runOnSubmit(), 'odebi')
                 setSubmitting(false);
                 setValues(initialState)
             } else {
@@ -57,7 +56,6 @@ const useFormValidation = (initialState, validate, runOnSubmit) => {
     const handleChange = (event) => {
         const target = event.target;
         let { name, value } = target
-        value = target.type === 'checkbox' ? !values.is_super : target.value;
         name = target.name;
         setValues({
             ...values,

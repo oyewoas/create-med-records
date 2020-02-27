@@ -1,19 +1,13 @@
-const API_BASE_URL = 'https://2086c28b-a507-42a2-a4fc-e0b3551acb24.mock.pstmn.io/api/v1'
-const LOGIN_API = `${API_BASE_URL}/login`
-const LOG_OUT_API = `${API_BASE_URL}/logout`
-const HISTORY_API = `${API_BASE_URL}/history`
-const COMPARE_API = `${API_BASE_URL}/compare`
-const GET_COMPARE_API = `${API_BASE_URL}/get-comparison`
-const RE_RUN_COMPARE_API = `${API_BASE_URL}/rerun-compare`
+const API_BASE_URL = 'https://cb85fce0-b439-4a41-a67e-0eee04898716.mock.pstmn.io/api/v1'
+const CREATE_MEDICAL_RECORD = `${API_BASE_URL}/create-record`
+const GET_ALL_MEDICAL_RECORDS = `${API_BASE_URL}/all-records`
+
+
 
 
 
 export const API = {
-    API_BASE_URL,
-    LOGIN_API,
-    LOG_OUT_API,
-    HISTORY_API,
-    COMPARE_API,
-    GET_COMPARE_API, 
-    RE_RUN_COMPARE_API
+   API_BASE_URL,
+   CREATE_MEDICAL_RECORD,
+   GET_ALL_MEDICAL_RECORDS
 }

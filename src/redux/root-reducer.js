@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import userReducer from "./user/user.reducer";
+import medicalRecordReducer from "./record/record.reducer";
+import allRecordsReducer from "./allrecords/allrecords.reducer"
 import { persistReducer } from "redux-persist";
 import storage from 'redux-persist/lib/storage' //using localstorage
-import comparisonReducer from "./compare/compare.reducer";
-import historyReducer from "./history/history.reducer";
+
 
 
 // represent all the state(reducer) for the App
@@ -11,13 +11,12 @@ import historyReducer from "./history/history.reducer";
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['user', 'comparison', 'history'] //what i want to persist
+    whitelist: ['record', 'allrecords'] //what i want to persist
 }
 
 const rootReducer = combineReducers({
-    user: userReducer,
-    comparison: comparisonReducer,
-    history: historyReducer
+    record: medicalRecordReducer,
+    allrecords: allRecordsReducer,
     
 })
 
