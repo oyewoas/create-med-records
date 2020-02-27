@@ -36,7 +36,7 @@ const CreateMedicalRecord = ({ setMedicalRecord }) => {
                     <div className="row">
                         <div className="col-md-3 col-sm-12 col-lg-3"></div>
                         <div className="col-md-6 col-sm-12 col-lg-6">
-                            <div className="legend"><span>New Medical Record</span></div>
+                            <h4>New Medical Record</h4>
                             <form onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="form-group col-md-6">

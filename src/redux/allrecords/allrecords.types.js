@@ -1,0 +1,4 @@
+export const allRecordsActionTypes = {
+    GET_ALL_RECORDS: 'GET_ALL_RECORDS',
+    FILTER_MINORS_IN_RECORDS: 'FILTER_MINORS_IN_RECORDS'
+}
