@@ -1,0 +1,51 @@
+@import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixins';
+
+$sub-color: grey;
+
+.compare-page{
+    padding: 200px 0;
+    .error-text{
+        color: $color-red;
+        font-size: 12px;
+    }
+
+    .compare-heading{
+        font-size: 30px;
+        color: $color-white;
+        background-color: $color-blue;
+        padding: 30px 20px;
+        text-align: center;
+        @include respond(phone){
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        @include respond(tab-land){
+            font-size: 25px;
+        }
+    }
+
+    .compare-text{
+        font-size: 18px;
+        color: $sub-color;
+
+    }
+
+    .form{
+        margin-right: 10px;
+        margin-left: 10px;
+       border: solid 1px rgb(212, 208, 212);
+        @include respond(phone){
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 40px;
+
+        }
+        @include respond(tab-port){
+            margin-top: 40px;
+
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+@import '../../assets/scss/abstracts/variables';
+
+.history-page{
+    padding: 200px 0;
+    .table{
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../assets/scss/abstracts/variables';
+
+
+.table-row{
+    
+    &:hover{
+        color: $color-white !important;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .btn-details {
+        padding: 5px 10px;
+        background-color: $color-white;
+        color: $color-blue;
+        text-decoration: none;
+    }
+}

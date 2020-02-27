@@ -1,0 +1,32 @@
+@import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixins';
+
+.details-content{
+    background-color: $color-blue;
+    padding: 20px;
+    color: $color-white;
+    -webkit-box-shadow: 1px 11px 25px 11px $color-grey;
+    -moz-box-shadow: 1px 11px 25px 11px $color-grey;
+    box-shadow: 1px 11px 25px 11px $color-grey;
+    letter-spacing: 2px;
+    .details-percentage{
+        font-size: 100px;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        @include respond(phone){
+            font-size: 70px;
+        }
+    }
+    hr{
+        background-color: $color-white;
+    }
+    .details-heading{
+        padding-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px;
+        text-decoration: underline;
+
+    }
+}

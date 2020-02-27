@@ -1,0 +1,26 @@
+@import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixins';
+
+.home-page{
+    padding: $component-padding 0;
+    overflow: hidden;
+    .left-section{
+        padding: 0 20px;
+    }
+
+    .right-section{
+        margin-top: 50px;
+    }
+
+    .home-heading{
+        font-weight: bold;
+        font-size: 50px;
+        color: rgb(66, 65, 65);
+        letter-spacing: 2px;
+        @include respond(phone){
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+
+    }
+}

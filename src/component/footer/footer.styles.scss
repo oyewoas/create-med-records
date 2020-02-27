@@ -1,0 +1,19 @@
+@import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixins';
+
+
+.footer{
+    .footer-text{
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: black;
+        @include respond(phone){
+            font-size: 16px;
+        }
+        .fa-heart{
+            color: $color-red;
+        }
+    }
+
+}
