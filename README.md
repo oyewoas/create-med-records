@@ -12,3 +12,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## To test online
 
 visit the url [https://create-med-records.herokuapp.com](https://create-med-records.herokuapp.com)
+
+I used postman to mock some response data for getting all medical records.
