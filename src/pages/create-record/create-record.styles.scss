@@ -1,21 +1,29 @@
-.signin{
+.create-record{
     padding-top: 200px;
     padding-bottom: 200px;
     .legend{
         letter-spacing: 2px;
         font-size: 18px;
-        text-align: center;
+        text-align: left;
         font-weight: 500;
     }
     .title {
         margin: 10px 0;
       }
     .button{
-        text-align: center;
+        text-align: right;
     }
     .error-text{
         color: red;
         font-size: 12px;
         margin-top: -25px;
+    }
+    .select{
+        outline: none;
+        border-radius: 0px;
+        border-color: grey;
+    }
+    .living{
+        color:grey;
     }
 }

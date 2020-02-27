@@ -1,8 +1,8 @@
-import { userActionTypes } from "./user.types"
+import { userActionTypes } from "./record.types"
 
 
 
-export const setCurrentUser = user => ({
+export const setMedicalRecord = user => ({
     type: userActionTypes.SET_CURRENT_USER,
     payload: user
 

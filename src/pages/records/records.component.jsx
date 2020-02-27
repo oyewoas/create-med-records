@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import HistoryItem from '../../component/history-item/history-item.component'
-import './history.styles.scss'
+import './records.styles.scss'
 import { connect } from 'react-redux'
 import { getCurrentHistory } from '../../redux/history/history.actions'
 import { getHistory } from '../../services/history.services'
@@ -9,7 +9,7 @@ import { selectCurrentHistory } from '../../redux/history/history.selector';
 import { createStructuredSelector } from 'reselect'
 
 
-const HistoryPage = ({ getCurrentHistory, currentHistory }) => {
+const RecordsPage = ({ getCurrentHistory, currentHistory }) => {
     useEffect(() => {
         getHistory(getCurrentHistory)
     }, [])
@@ -57,4 +57,4 @@ const mapDispatchToProps = dispatch => ({
     getCurrentHistory: data => dispatch(getCurrentHistory(data))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(HistoryPage)
+export default connect(mapStateToProps, mapDispatchToProps)(RecordsPage)
